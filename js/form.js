@@ -19,12 +19,27 @@
   const auth = firebase.auth();
 
 
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      
+    } else {
+      // No user is signed in.
+      
+    }
+  });
+
   function login(){
     var email = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-
-    
-   
-
-    window.alert("Signed In "+email+" "+ password);
-  }
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+      location.replace("https://www.w3schools.com")
+      // ...
+      window.alert("Error :" + errorMessage)
+    });
+    }
