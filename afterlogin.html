@@ -159,7 +159,7 @@
                                         <li><a href="#">My Report</a></li>
                                         <li><a href="#">My Profile</a></li>
 
-                                        <button class="btn btn-danger" style="align-self: center; padding:5px;" onclick="logout()">Signout</button>
+                                        <button class="btn btn-danger" style="align-self: center; padding:5px;margin:auto;color:black;justify-content:center; " onclick="logout()"><i class="fa fa-sign-out" style="color: black;margin-right:5px;font-size:25px;" size="15px"></i><strong style="justify-self: center;">Signout</strong></button>
                                     </ul>
                                 
                                 
@@ -313,15 +313,21 @@
       firebase.analytics();
     </script>
     <script >
-        
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (!user) {
+              // User is signed in.
+          
+              window.location.href = "login1.html";
+              }
+            } 
+          );        
 
-          function logout(){
-            
-            firebase.auth().signOut();
-            window.location.href="login1.html"
+        function logout(){
+        firebase.auth().signOut();  
         }
-        </script>
-            <script src="js/jquery.min.js"></script>
+    </script>
+    
+    <script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -338,6 +344,6 @@
 	
 	<!-- Main JS -->
     <script src="js/main.js"></script>
-    <script src="js/form.js"></script>
+    
     </body>
     </html>

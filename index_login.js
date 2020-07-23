@@ -6,7 +6,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       // User is signed in.
   
       window.location.href = "afterlogin.html"
-      break
+      
   
       //var user = firebase.auth().currentUser;
   
