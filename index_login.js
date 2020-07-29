@@ -41,6 +41,11 @@
         document.getElementById("designation").innerHTML=designation;
         var dob=snap.val().dob;
         document.getElementById("dob").innerHTML=dob;
+        var dap=snap.val().dap;
+        
+        document.getElementById("dap").innerHTML=dap;
+        
+        
         var url=snap.val().imgSrc;
         var img = document.getElementById('myimg');
         img.src = url;
@@ -55,16 +60,19 @@
     }
     
   function change(){
+    window.alert("error");
     var user=firebase.auth().currentUser;
-    var email=user.email;
+    var emailq=user.email;
     var pass=document.getElementById("passwordold");
     var newpass=document.getElementById("paasswordnew");
     var confirmPassword=document.getElementById("confirmpass");
-    var credential = firebase.auth.EmailAuthProvider.credential(email,pass);
+    var credential = firebase.auth.EmailAuthProvider.credential(emailq,pass);
+    window.alert("second");
     user.reauthenticateWithCredential(credential).then(function(){
       if(newpass===confirmPassword){
         user.updatePassword(newpass).then(function() {
           // Update successful.
+          window.alert("succesfull");
         }).catch(function(error) {
           // An error happened.
           window.alert(error)
