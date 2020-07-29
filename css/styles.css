@@ -6,7 +6,7 @@
     width: 400px;
     padding: 40px;
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    
     background: rgba(0,0,0,0.8);
     border-radius: 25px;
     color: black;
@@ -21,12 +21,9 @@ h2{
 .box .inputbox{
     width: 100%;
     background:transparent;
-
-    
     border-bottom:1px solid #ff5722;
     color: #FFF;
     margin-bottom: 30px;
-    
 }
 
 .box .inputbox input{
@@ -36,6 +33,7 @@ h2{
     border: none;
     background: transparent;
     outline: none;
+    
 }
 .box .inputbox label{
     position: absolute;
@@ -46,12 +44,12 @@ h2{
     color: #FFF;
     pointer-events: none;
     overflow: hidden;
-
 }
-.box input[type="submit"]{
+.box button{
     background: transparent;
     border: none;
     outline: none;
+    border-radius: 50%;
     color: #fff;
     background-color: #ff5722;
     padding: 10px 15px;

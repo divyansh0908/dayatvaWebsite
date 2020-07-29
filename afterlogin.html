@@ -154,10 +154,10 @@
                                 
                                 <li><a href="contact.html"><i class="fa fa-bell" style="color: black; margin-right:10px; position:relative; right: -10px;"></i></a></li>
 
-                                <li><a class="fh5co-sub-ddown"><i class="fa fa-user" style="color: black; position:relative; right: -20px;"></i></a>
+                                <li><a class="fh5co-sub-ddown"><i class="fa fa-user" style="color: black; position:relative; right: -20px;"></i><p id="phn"></p></a>
                                     <ul class="fh5co-sub-menu">
                                         <li><a href="#">My Report</a></li>
-                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="profile.html">My Profile</a></li>
 
                                         <button class="btn btn-danger" style="align-self: center; padding:5px;margin:auto;color:black;justify-content:center; " onclick="logout()"><i class="fa fa-sign-out" style="color: black;margin-right:5px;font-size:25px;" size="15px"></i><strong style="justify-self: center;">Signout</strong></button>
                                     </ul>
@@ -294,38 +294,9 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script> 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyC_SMa3x21F9T4fTwW_SFs-cIxFpxES9P8",
-        authDomain: "dayatva-a8f0c.firebaseapp.com",
-        databaseURL: "https://dayatva-a8f0c.firebaseio.com",
-        projectId: "dayatva-a8f0c",
-        storageBucket: "dayatva-a8f0c.appspot.com",
-        messagingSenderId: "633622009564",
-        appId: "1:633622009564:web:3731a1fe5375ee919cc619",
-        measurementId: "G-MGGPJ3C5Z8"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-    <script >
-        firebase.auth().onAuthStateChanged(function(user) {
-            if (!user) {
-              // User is signed in.
-          
-              window.location.href = "login1.html";
-              }
-            } 
-          );        
-
-        function logout(){
-        firebase.auth().signOut();  
-        }
-    </script>
+         <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script> 
+         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script> 
     
     <script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -344,6 +315,6 @@
 	
 	<!-- Main JS -->
     <script src="js/main.js"></script>
-    
+    <script src="index_login.js"></script>
     </body>
     </html>
