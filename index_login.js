@@ -29,6 +29,14 @@
       firebase.database().ref("/Users/"+email_id).once('value').then(function(snap){
         var phone=snap.val().phn;
         document.getElementById("phn").innerHTML=phone;
+        var op=snap.val().op;
+        document.getElementById("op").innerHTML=op;
+        var year=snap.val().year;
+        document.getElementById("year").innerHTML=year;
+        var pcp=snap.val().pcp;
+        document.getElementById("pcp").innerHTML=pcp;
+        var ws=snap.val().ws;
+        document.getElementById("ws").innerHTML=ws;
         var name=snap.val().name;
         document.getElementById("name").innerHTML=name;
         var name=snap.val().name;
@@ -42,8 +50,10 @@
         var dob=snap.val().dob;
         document.getElementById("dob").innerHTML=dob;
         var dap=snap.val().dap;
-        
+        if(dap!=null){
+        document.getElementById("dap1").style.display="block";
         document.getElementById("dap").innerHTML=dap;
+        }
         
         
         var url=snap.val().imgSrc;
