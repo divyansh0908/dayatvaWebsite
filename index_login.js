@@ -41,7 +41,8 @@
         document.getElementById("name").innerHTML=name;
         var name=snap.val().name;
         document.getElementById("name1").innerHTML=name;
-     
+        var des=snap.val().des;
+        document.getElementById("description").innerHTML=des;
         var department=snap.val().dep;
         document.getElementById("depart").innerHTML=department;
         var email=snap.val().email;
