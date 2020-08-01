@@ -11,5 +11,18 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-var n=document.getElementById("name").innerHTML;
-window.alert(n);
+
+
+firebase.database().ref("/local/"+localStorage.getItem("ad")).once('value').then(function(snap){
+
+    nam=snap.val().name;
+    document.getElementById("name22").innerHTML=nam;
+    post=snap.val().post;
+    document.getElementById("designation").innerHTML=post;
+    des=snap.val().description;
+    document.getElementById("description").innerHTML=des;
+    var url=snap.val().imgSrc;
+        var img = document.getElementById('myimg1');
+        img.src = url;
+
+});
