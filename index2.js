@@ -21,8 +21,26 @@ firebase.database().ref("/local/"+localStorage.getItem("ad")).once('value').then
     document.getElementById("designation").innerHTML=post;
     des=snap.val().description;
     document.getElementById("description").innerHTML=des;
+    dep=snap.val().dep;
+    document.getElementById("depart1").innerHTML=dep;
+    ws=snap.val().ws;
+    document.getElementById("ws1").innerHTML=ws;
+    op=snap.val().op;
+    document.getElementById("op1").innerHTML=op;
     var url=snap.val().imgSrc;
         var img = document.getElementById('myimg1');
         img.src = url;
-
+    if(ws=="November 2018"){
+        document.getElementById("body").style.background="-webkit-linear-gradient(left,#868f96 , #596164)";
+        document.getElementById("op1").style.color="#596164";
+        document.getElementById("ws1").style.color="#596164";
+        document.getElementById("depart1").style.color="#596164";
+        
+    }
+    var dap=snap.val().dap;
+        if(dap!=null){
+        document.getElementById("dap1").style.display="block";
+        document.getElementById("dap2").innerHTML=dap;
+        document.getElementById("dap2").style.color="#596164";
+        }
 });
