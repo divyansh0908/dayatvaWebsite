@@ -1472,3 +1472,24 @@ i{
   color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */
+.dropdown-menu li a{
+  padding: 5px;
+}
+.dropdown-menu{
+  align-self: center;
+}
+.dropdown-menu:after{
+  position: absolute;
+  top: -6px;
+  right: 21px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  border-bottom: 8px solid white;
+  border-left: 8px solid transparent;
+  content: '';
+}
+.navbar-right{
+  margin-right: 50px;
+}
