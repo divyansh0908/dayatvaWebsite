@@ -1506,3 +1506,77 @@ figure {
 }
 
 
+$body: #16151b;
+$color: #d7d7d9;
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+$font: "Pangolin", cursive;
+
+body {
+  background: $body;
+  color: $color;
+  font-family: $font;
+  line-height: 1.5em;
+  padding: 1em;
+}
+.container,
+.container-2 {
+  height: 100vh;
+}
+.container-2 {
+  background: #312f3d;
+  margin: -16px;
+}
+.st-mediabar {
+  top: 25%;
+  position: fixed;
+
+  .st-table-content li {
+    text-align: center;
+    margin: 18px 0;
+    position: relative;
+    transform: rotate(-9deg);
+
+    .fab,
+    .fas,
+    .far {
+      font-size: 18px;
+      display: block;
+      padding: 8px;
+      border: 2px solid #a2a3a8;
+      border-radius: 0.5em;
+
+      &:hover {
+        cursor: pointer;
+        color: #1D1E22;
+      }
+    }
+    span {
+      white-space: nowrap;
+      position: absolute;
+      top: 8px;
+      left: -150px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+    }
+
+    &:hover span {
+      left: 55px;
+      opacity: 1;
+    }
+
+    &:hover .fa-facebook-f {
+      background: #526fa3;
+      border-color: #526fa3;
+    }
+    &:hover .fa-twitter {
+      background: #4db8ec;
+      border-color: #4db8ec;
+    }
+    &:hover .fa-google-plus-g {
+      background: #d14c2d;
+      border-color: #d14c2d;
+    }
+  }
+}

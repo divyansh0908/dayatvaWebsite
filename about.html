@@ -316,7 +316,20 @@
 	
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-
+	<script>
+		$('.dropdown').hover(function(){ 
+			$('.dropdown-toggle', this).trigger('click'); 
+		  });
+	</script> 
+	<script>
+		$(document).ready(function(){
+		  $('.dropdown-submenu a.test').on('click', function(e){
+			$( this).next('ul').toggle();
+			e.stopPropagation();
+			e.preventDefault();
+		  });
+		});
+		</script>
 	</body>
 </html>
 
