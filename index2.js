@@ -35,12 +35,20 @@ firebase.database().ref("/local/"+localStorage.getItem("ad")).once('value').then
         document.getElementById("op1").style.color="#596164";
         document.getElementById("ws1").style.color="#596164";
         document.getElementById("depart1").style.color="#596164";
+
         
+    }
+    else if(ws==="November 2019"){
+        
+            document.getElementById("body").style.background="-webkit-linear-gradient(left,#fdfcfb , #e2d1c3)";
+            document.getElementById("op1").style.color=" #e2d1c3";
+            document.getElementById("ws1").style.color=" #e2d1c3";
+            document.getElementById("depart1").style.color=" #e2d1c3";
     }
     var dap=snap.val().dap;
         if(dap!=null){
         document.getElementById("dap1").style.display="block";
         document.getElementById("dap2").innerHTML=dap;
-        document.getElementById("dap2").style.color="#596164";
+        document.getElementById("dap2").style.color=" #e2d1c3";
         }
 });
