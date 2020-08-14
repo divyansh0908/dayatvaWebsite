@@ -1548,3 +1548,6 @@ i{
 .navbar-default{
   background-color: #FFF;
 }
+.header-top{
+  display: none;
+}
