@@ -1511,6 +1511,17 @@ i{
   color: white;
   font-size: 20px;
 }
+@media (max-width: 767px){
+  .icon-bar{
+   display: none;
+    bottom: 0;
+    margin-left: auto;
+  }
+  
+  
+
+  
+}
 
 .icon-bar a:hover {
   background-color: #000;
