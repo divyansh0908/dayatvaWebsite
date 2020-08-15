@@ -1,3 +1,4 @@
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -1554,6 +1555,10 @@ i{
 
 .youtube {
   background: #bb0000;
+  color: white;
+}
+.blogger{
+  background: #fc4f08;
   color: white;
 }
 
