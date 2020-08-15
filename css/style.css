@@ -1497,9 +1497,13 @@ i{
 .icon-bar {
   position: fixed;
   top: 50%;
+
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  /* -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); */
   z-index: 10;
 }
 
@@ -1512,11 +1516,12 @@ i{
   font-size: 20px;
 }
 @media (max-width: 767px){
-  .icon-bar{
-   display: none;
-    bottom: 0;
-    margin-left: auto;
-  }
+
+ .icon-bar{
+   z-index: 10000;
+   float: right;
+   right: 0;
+ }
   
   
 
