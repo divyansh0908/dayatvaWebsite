@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -69,7 +68,116 @@
   gtag('config', 'UA-168096014-1');
 </script>
 
-    
+    <!-- <style>
+        .container1{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 50px;
+            margin-top: 0px;
+        
+        }
+        .container1 .card{
+            position: relative;
+            height: 150px;
+            background: #FFF;
+            width: 28%;
+            margin: 20px 40px;
+        
+        }
+        .container1 .card .imgBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ff6c3d;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+        }
+        .container1 .card .imgBx img{
+            width: 100px;
+            transition:  0.5s ease-in-out;
+        }
+        
+        .container1 .card:hover .imgBx{
+            width: 150px;
+            height: 150px;
+            left: -105px;
+            top: calc(50% - 75px);
+            transition: 0.5s ease-in-out;
+            background: #333;
+            margin-left: 20px;
+        }
+        
+        .container1 .card:hover .imgBx img{
+            width: 75px;
+            transition:  0.5s ease-in-out;
+        }
+        
+        .container1 .card .content{
+            position: absolute;
+            right: 0;
+            width: calc(100% - 75px);
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: small;
+        
+        }
+        
+        .container1 .card .content h3{
+            margin-bottom: 5px;
+            font-size: 24px;
+            color: #000;
+        
+        }
+        .container1 .card .content a{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #ff6c3d;
+            text-decoration: none;
+            color: #000;
+        }
+        .container1  .content:hover a{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #ff6c3d;
+            text-decoration: none;
+            color: #000;
+        }
+        
+@media (max-width: 1150px){
+    .container1{
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+    }
+    .container1 .card{
+        width: 40%;
+    }
+}
+@media (max-width: 900px){
+    .container1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1 .card{
+        width:400px;
+    }
+}
+    </style> -->
     
     </head>
     
@@ -113,7 +221,7 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       <li ><a href="index.html"><i class="fa fa-home" style="color: #ff5562;margin-right:5px;"></i>Home <span class="sr-only">(current)</span></a></li>
-                      <li ><a href="memberare.html"><i class="fa fa-users" style="color: #ff5562;margin-right:5px;"></i>Member Area <span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="memberare.html"><i class="fa fa-users" style="color: #ff5562;margin-right:5px;"></i>Member Area <span class="sr-only">(current)</span></a></li>
                       <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-upload" style="color: #ff5562;margin-right:5px;"></i>Uploads <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -144,6 +252,7 @@
                           <li class="active"><a href="afterlogin.html">Dashboard</a></li>
                           <li><a href="profile.html">My Profile</a></li>
                           <li><a href="profile2.html">My Report</a></li>
+                          <li><a href="profile2.html">Settings</a></li>
                           <li role="separator" class="divider"></li>
                           <li style="background: bisque;"><a onclick="logout()"><i class="fa fa-sign-out" style="color: #ff5622;margin-right:5px;font-size:25px;" size="15px"></i>Signout</a></li>
                         </ul>
@@ -234,27 +343,51 @@
             <div class="main">
                 
             <div class="container1">
-                <div class="card">
-                    <div class="imgBx" data-text="Time Table">
-                        <img src="./images/login/calendar.png" alt="">
+                <div class="card" >
+                    <div class="imgBx" data-text="Tasks">
+                        <img src="./images/login/faculty-shield.png" >
                     </div>
                     <div class="content">
                         <div>
-                            <h3>Time Table</h3>
+                            <h3>Faculty Coordinator</h3>
+                            <p>It's better to be on time. So, from next time get your time table from here.</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx" data-text="Time Table">
+                        <img src="./images/login/communityPresent.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>Current Member</h3>
                             <p>It's better to be on time. So, from next time get your time table from here.</p>
                             <a href="#">Show TT</a>
                         </div>
                     </div>
                 </div>
-
-
+                
                 <div class="card">
                     <div class="imgBx" data-text="Tasks">
-                        <img src="./images/login/checklist.png" >
+                        <img src="./images/login/student.png" >
                     </div>
                     <div class="content">
                         <div>
-                            <h3>Assigned Task</h3>
+                            <h3>Student</h3>
+                            <p>It's better to be on time. So, from next time get your time table from here.</p>
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx" data-text="Tasks">
+                        <img src="./images/login/communityPast.png" >
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>Past Member</h3>
                             <p>It's better to be on time. So, from next time get your time table from here.</p>
                             <a href="#">More</a>
                         </div>
@@ -264,11 +397,11 @@
 
                 <div class="card">
                     <div class="imgBx" data-text="Upload">
-                        <img src="./images/login/files-and-folders.png" >
+                        <img src="./images/login/changemaker.png" >
                     </div>
                     <div class="content">
                         <div>
-                            <h3>Upload Modules</h3>
+                            <h3>Changemaker</h3>
                             <p>It's better to be on time. So, from next time get your time table from here.</p>
                             <a href="#">More</a>
                         </div>
@@ -278,11 +411,11 @@
 
                 <div class="card">
                     <div class="imgBx" data-text="Module">
-                        <img src="./images/login/agenda.png" >
+                        <img src="./images/login/volunteer.png" >
                     </div>
                     <div class="content">
                         <div>
-                            <h3>Modules</h3>
+                            <h3>Volunteer</h3>
                             <p>It's better to be on time. So, from next time get your time table from here.</p>
                             <a href="#">More</a>
                         </div>
@@ -290,7 +423,7 @@
                 </div>
                 
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="imgBx" data-text="Video">
                         <img src="./images/login/video.png" >
                     </div>
@@ -301,10 +434,10 @@
                             <a href="#">More</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
 
-                <div class="card">
+                <!-- <div class="card">
                     <div class="imgBx" data-text="Idea">
                         <img src="./images/login/idea.png" >
                     </div>
@@ -315,7 +448,7 @@
                             <a href="#">Submit</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
