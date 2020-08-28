@@ -98,7 +98,7 @@
         font-size: 12px;
         color: #06060c;
         font-weight: 600;
-        margin-top: 10%;
+        margin-top: 1%;
     }
     .profile-work a{
         text-decoration: none;
@@ -134,12 +134,36 @@
     #dap1{
         display: none;
     }
-    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
 
 
 
 </style>
+<link rel="stylesheet" href="swiper.min.css">
     <title>My Profile</title>
     <link rel="shortcut icon" href="favicon.png">
 </head>
@@ -157,7 +181,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li ><a href="index.html"><i class="fa fa-home" style="color: #ff5562;margin-right:5px;"></i>Home <span class="sr-only">(current)</span></a></li>
+              <li ><a href="index.html"><i class="fa fa-home" style="color: #ff5572;margin-right:5px;"></i>Home <span class="sr-only">(current)</span></a></li>
+              <li ><a href="afterlogin.html"><i class="glyphicon glyphicon-blackboard" style="color: #ff5572;margin-right:5px;"></i>Dashboard <span class="sr-only">(current)</span></a></li>
+              
+              <li class=""><a href="memberare.html"><i class="fa fa-users" style="color: #ff5572;margin-right:5px;"></i>Member Area <span class="sr-only">(current)</span></a></li>
+                      
               <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-upload" style="color: #ff5562;margin-right:5px;"></i>Uploads <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -183,9 +211,9 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><i class="fa fa-bell" style="color: #ff5722;padding: 0 0px 0 0; margin-right:10px; position:relative; right: 0px;"></i>Notification</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" style="color: #ff5622;margin-right:5px;"></i>User <span class="caret" style="color: #ff5562;"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" style="color: #ff5722;margin-right:5px;"></i>User <span class="caret" style="color: #ff5562;"></span></a>
                 <ul class="dropdown-menu">
-                  <li ><a href="afterlogin.html">Dashboard</a></li>
+                 
                   <li class="active"><a href="profile.html">My Profile</a></li>
                   <li><a href="#">My Report</a></li>
                   <li role="separator" class="divider"></li>
@@ -247,11 +275,26 @@
         <form method="post">
             <div class="row">
                 <div class="col-md-4" >
+                    <div class="row">
                     <div class="profile-img">
                         <img src="" alt="profile picture" id="myimg"/>
-                        
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia ratione expedita! Amet nisi voluptatem, libero itaque neque consectetur modi autem possimus. Numquam iure enim officiis atque dolorem asperiores rerum? -->
                     </div>
-                    
+                    </div>
+                    <div class="row">
+                        <div class="profile-img">
+                            <p style="color:#ff5572;text-align:left;margin-left:55px;font-size: 17px;margin-top:15px;">
+                                <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illo porro aut dolores hic eius voluptas, inventore nemo modi quasi incidunt asperiores voluptate delectus aspernatur repudiandae sint dolor quae necessitatibus. -->
+                            <!-- dnxvkjnn xjvnxkznvnvknxvnkxjnx kxdnv kxnjvbd vdkvnxjv kjvjd vdn svj xdkv ssj zzkv zsv skn vkjxz vkzxj vv zkjxv djkxb bdb dknsinegfnseoingon -->
+                        Anurag Tripathi    
+                        </p>
+                        <p style="color:#ff5572;text-align:left;margin-left:55px;font-size: 17px;margin-top:0;">
+                            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illo porro aut dolores hic eius voluptas, inventore nemo modi quasi incidunt asperiores voluptate delectus aspernatur repudiandae sint dolor quae necessitatibus. -->
+                        <!-- dnxvkjnn xjvnxkznvnvknxvnkxjnx kxdnv kxnjvbd vdkvnxjv kjvjd vdn svj xdkv ssj zzkv zsv skn vkjxz vkzxj vv zkjxv djkxb bdb dknsinegfnseoingon -->
+                    anuragtripathi2246@gmail.com   
+                    </p>
+                        </div>
+                        </div>
                 </div>
                 <div class="col-md-6">
                     <div class="profile-head">
@@ -287,12 +330,12 @@
                         <a class="profile-edit-btn" onclick="changepassword()">Change Password</a>                    
                 </div> -->
                 <div class="col-md-4" >
-                    <div class="profile-work">
+                    <div class="profile-work" style="width:76%;margin-top:0;" >
                         
                     
                     </div>
                 </div>
-                <div class="col-md-7 order-md-last">
+                <div class="col-md-7 order-md-last" style="padding-left:30px;">
                     <div class="tab-content profile-tab" id="myTabContent">
                         <div class="tab-pane  active" id="home" role="tabpanel" >
                                     
@@ -389,38 +432,27 @@
                                     
                         </div>
                         <div class="tab-pane " id="carau" role="tabpanel" >
-                            <div class="row row-content">
-    <div class="col">
-      <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-              <img class="d-block img-fluid"
-                  src="img/uthappizza.png" alt="Uthappizza">
-              <div class="carousel-caption d-none d-md-block">
-                  <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
-                  . . .
-              </div>
-          </div>
-          <div class="carousel-item">
-                  . . .
-          </div>
-          <div class="carousel-item">
-                  . . .
-          </div>
-      </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#mycarousel" data-slide-to="1"></li>
-        <li data-target="#mycarousel" data-slide-to="2"></li>
-    </ol>
-    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-  </a>
-    </div>
+                            <div class="row row-content" style="height: 100px;widows: 100px;">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><img src="./images/login/agenda.png" alt="" width="25%"></div>
+                                      <div class="swiper-slide">Slide 2</div>
+                                      <div class="swiper-slide">Slide 3</div>
+                                      <div class="swiper-slide">Slide 4</div>
+                                      <div class="swiper-slide">Slide 5</div>
+                                      <div class="swiper-slide">Slide 6</div>
+                                      <div class="swiper-slide">Slide 7</div>
+                                      <div class="swiper-slide">Slide 8</div>
+                                      <div class="swiper-slide">Slide 9</div>
+                                      <div class="swiper-slide">Slide 10</div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                                
   </div>
                         </div>
                         <div class="tab-pane " id="profile" role="tabpanel" >
@@ -487,7 +519,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script> 
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script> 
-    
+    <script src="swiper.min.js"></script>
     <script src="index_login.js"></script>
     <script src="js/jquery.slim.min.js"></script>
 
@@ -498,6 +530,22 @@
 
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="swiper.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        cssMode: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination'
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
 </body>
 </html>
