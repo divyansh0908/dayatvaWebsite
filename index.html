@@ -455,6 +455,7 @@
 			<a href="https://www.youtube.com/DayatvaASocialInitiative/" class="blogger"><i class="fab fa-blogger"></i></a> 
 		  </div>
 		 
+		  
 
 		<!-- END What we do -->
 
@@ -473,6 +474,9 @@
 								<a href="https://www.linkedin.com/company/dayatvaiitram/" class="grow"><i class="icon-linkedin2"></i></a>
 								<a href="https://www.youtube.com/channel/UCj-aVkE9xDbtGGwUgswXmpQ"><i class="icon-youtube"></i></a>
 							</p>
+							<div >
+								<p ><span style="font-weight: bolder;">Visitor Count </span><span id="visits"></span></p>
+							</div>
 							<p align="text-center">Copyright © Dayatva - A Social Initiative</p>
 							<p style="justify-content: right;">Last Updated: 15/08/2020</p>
 						</div>
@@ -516,6 +520,9 @@
 			e.stopPropagation();
 			e.preventDefault();
 		  });
+		});
+		$.getJSON("https://api.countapi.xyz/hit/mysite.com/visits", function(response) {
+			$("#visits").text(response.value);
 		});
 		</script>
 
