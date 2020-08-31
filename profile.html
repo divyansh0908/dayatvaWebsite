@@ -158,7 +158,18 @@
         -webkit-align-items: center;
         align-items: center;
       }
-
+      .setting {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+      }
 
 
 
@@ -169,7 +180,7 @@
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed">
-        <div class="container-fluid" >
+        <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -181,45 +192,28 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li ><a href="index.html"><i class="fa fa-home" style="color: #ff5572;margin-right:5px;"></i>Home <span class="sr-only">(current)</span></a></li>
-              <li ><a href="afterlogin.html"><i class="glyphicon glyphicon-blackboard" style="color: #ff5572;margin-right:5px;"></i>Dashboard <span class="sr-only">(current)</span></a></li>
+              <li class=""><a href="afterlogin.html"><i class="fa fa-home" style="color: #ff5562;margin-right:5px;"></i>Home <span class="sr-only">(current)</span></a></li>
+              <li ><a href="memberare.html"><i class="fa fa-users" style="color: #ff5562;margin-right:5px;"></i>Member Area <span class="sr-only">(current)</span></a></li>
               
-              <li class=""><a href="memberare.html"><i class="fa fa-users" style="color: #ff5572;margin-right:5px;"></i>Member Area <span class="sr-only">(current)</span></a></li>
-                      
-              <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-upload" style="color: #ff5562;margin-right:5px;"></i>Uploads <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Video</a></li>
-                  <li><a href="#">Module </a></li>
-                  <li><a href="#">Test Paper</a></li>
-                  <li><a href="#">Worksheet</a></li>
-                  
-                </ul>
-              </li> -->
-              <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-download" style="color: #ff5562;margin-right:5px;"></i>Downloads <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Module</a></li>
-                  <li><a href="#">Test Paper </a></li>
-                  <li><a href="#">Worksheet</a></li>
-                  <li><a href="#">Report</a></li>
-                  
-                </ul>
-              </li> -->
+              
+             
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><i class="fa fa-bell" style="color: #ff5722;padding: 0 0px 0 0; margin-right:10px; position:relative; right: 0px;"></i>Notification</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" style="color: #ff5722;margin-right:5px;"></i>User <span class="caret" style="color: #ff5562;"></span></a>
+              <li class="active"> <a href="profile.html" ><i class="fa fa-user" style="color: #ff5622;margin-right:5px;"></i>My Profile </a></li>
+              <li> <a href="report.html" ><i class="fa fa-file" style="color: #ff5622;margin-right:5px;"></i>My Report </a></li>
+              <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" style="color: #ff5622;margin-right:5px;"></i>User <span class="caret" style="color: #ff5562;"></span></a>
                 <ul class="dropdown-menu">
                  
-                  <li class="active"><a href="profile.html">My Profile</a></li>
-                  <li><a href="#">My Report</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li style="background: bisque;"><a onclick="logout()"><i class="fa fa-sign-out" style="color: #ff5622;margin-right:5px;font-size:25px;" size="15px"></i>Signout</a></li>
+                  <li><a href="profile.html">My Profile</a></li>
+                  <li><a href="profile2.html">My Report</a></li>
+                 
+                  
                 </ul>
-              </li>
+              </li> -->
+              <li style="background: bisque;"><a onclick="logout()"><i class="fa fa-sign-out" style="color: #ff5622;margin-right:5px;"></i>Signout</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -283,14 +277,13 @@
                     </div>
                     <div class="row">
                         <div class="profile-img">
-                            <p style="color:#ff5572;text-align:left;margin-left:55px;font-size: 17px;margin-top:15px;">
+                            <p style="color:#973507;text-align:left;margin-left:55px;font-size: 17px;margin-top:15px;">
                                 <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illo porro aut dolores hic eius voluptas, inventore nemo modi quasi incidunt asperiores voluptate delectus aspernatur repudiandae sint dolor quae necessitatibus. -->
                             <!-- dnxvkjnn xjvnxkznvnvknxvnkxjnx kxdnv kxnjvbd vdkvnxjv kjvjd vdn svj xdkv ssj zzkv zsv skn vkjxz vkzxj vv zkjxv djkxb bdb dknsinegfnseoingon -->
                         Anurag Tripathi    
                         </p>
-                        <p style="color:#ff5572;text-align:left;margin-left:55px;font-size: 17px;margin-top:0;">
-                            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident illo porro aut dolores hic eius voluptas, inventore nemo modi quasi incidunt asperiores voluptate delectus aspernatur repudiandae sint dolor quae necessitatibus. -->
-                        <!-- dnxvkjnn xjvnxkznvnvknxvnkxjnx kxdnv kxnjvbd vdkvnxjv kjvjd vdn svj xdkv ssj zzkv zsv skn vkjxz vkzxj vv zkjxv djkxb bdb dknsinegfnseoingon -->
+                        <p style="color:#973507;text-align:left;margin-left:55px;font-size: 17px;margin-top:0;">
+                           
                     anuragtripathi2246@gmail.com   
                     </p>
                         </div>
@@ -305,7 +298,7 @@
                                     
                                 </h3>
                               <i><p id="description" style="padding: 20px;text-align: justify;border-right: 2px grey ;border-left: 2px grey;">
-                                  </p></i>
+                            </p></i>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#home" id="home-tab" data-toggle="tab"  role="tab" >About</a>
@@ -322,7 +315,15 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-2">
+                    
                 
+                <div class="setting">
+                    <a href="setting.html">
+                        Setting
+                    </a>
+                </div>
+                </div>
             </div>
             
             <div class="row">
@@ -330,8 +331,10 @@
                         <a class="profile-edit-btn" onclick="changepassword()">Change Password</a>                    
                 </div> -->
                 <div class="col-md-4" >
-                    <div class="profile-work" style="width:76%;margin-top:0;" >
-                        
+                    <div class="profile-work" >
+                        <div class="row">
+
+                        </div>
                     
                     </div>
                 </div>
